@@ -1,0 +1,118 @@
+.container {
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 1rem;
+}
+::-webkit-scrollbar{
+  display: none;
+}
+.header {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0px;
+  position: absolute;
+  margin-bottom: 200px;
+}
+.button {
+  height: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin: 10px;
+  padding: 5px;
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+  text-decoration: none;
+  width: 70px;
+  top: 10px;
+  right: 10px;
+  border-bottom: 2px solid var(--text-primary);
+  color: var(--text-primary);
+}
+.button:hover {
+  color: var(--text-primary);
+  border: 2px solid var(--bg-main);
+}
+.text{
+  text-align: center;
+}
+.text p{
+  margin: 20px;
+}
+.one,
+.two {
+  width: 70%;
+  height: 60vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.one{
+    margin-top: 25vh;
+}
+.two {
+  flex-direction: row-reverse;
+}
+.text h1 {
+  margin-bottom: 10px;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateZ(20deg);
+    transform: translateY(3px);
+  }
+}
+.lockImage {
+  width: 150px;
+  animation: rotate 4s infinite ease-out alternate-reverse;
+}
+.arrangeImage {
+  width: 450px;
+  margin-right: 10vw;
+  animation: rotate 4s infinite ease-out alternate-reverse;
+}
+@media (max-width: 420px) {
+  .button{
+    border: none;
+  }
+  .text{
+    max-width: 200px;
+    font-size: .9rem;
+    text-align: left;
+  }
+  .text p{
+    margin: 0 0 20px 0;
+  }
+  .one,
+  .two {
+    width: 90%;
+    margin: 10vw 0 10vw 0;
+    height: max-content;
+    flex-direction: column-reverse;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  .one {
+    margin-top: 40vw;
+  }
+  .lockImage {
+    width: 100px;
+  }
+  .arrangeImage {
+    width: 230px;
+  }
+}

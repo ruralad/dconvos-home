@@ -1,0 +1,134 @@
+.header{
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  position: absolute;
+  margin-top: 2vw;
+  font-size: 1.2rem;
+}
+
+.buttons {
+  margin-top: 30px;
+  margin-left: -100px;
+  text-align: left;
+  display: flex;
+}
+.button,
+.button2 {
+  min-width: 50px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+.button {
+  text-decoration: none;
+  width: 70px;
+  color: var(--text-primary);
+}
+.button:hover {
+  color: var(--text-primary);
+  border: 2px solid var(--bg-main);
+}
+.button2 {
+  position: relative;
+  background-color: transparent;
+  border-radius: 3px;
+  font-size: 1.2rem;
+  padding-right: 15px;
+  opacity: .7;
+  color: var(--text-primary);
+}
+.button2:hover {
+  opacity: 1;
+  color: black;
+}
+.link {
+  text-decoration: none;
+  color: #750c75;
+}
+.link:visited {
+  text-decoration: none;
+  color: #750c75;
+}
+
+/* snackbar */
+.snackbar {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  width: max-content;
+  height: 50px;
+  padding: 0 10px 0 10px;
+
+  font-size: calc(10px + 0.33vw);
+  color: var(--bg-main);
+  background-color: var(--text-primary);
+  border-radius: 3px;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  animation: hideMe 4s ease-out;
+  animation-fill-mode: forwards;
+}
+
+.snackbar span{
+  color: var(--text-primary);
+  background-color: var(--bg-main);
+  border-radius: 3px;
+  padding: 3px 7px 3px 7px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.powered{
+  position: absolute;
+  opacity: .8;
+  bottom: 20px;
+  right: 20px;
+  font-weight: 500;
+}
+.powered a{
+  color: var(--text-primary);
+}
+
+@keyframes hideMe {
+  95%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+@media (max-width: 481px) {
+  .header{
+    margin-top: 5vw;
+    font-size: 1rem;
+  }
+  .buttons {
+    font-size: 1.05rem;
+    margin-left: -100px;
+    margin-top: 10px;
+  }
+  .button{
+    height: 20px;
+  }
+  .snackbar {
+    left: 10px;
+    bottom: 10px;
+    height: 30px;
+  }
+  .powered{
+    bottom: 10px;
+    font-size: 12px;
+  }
+}

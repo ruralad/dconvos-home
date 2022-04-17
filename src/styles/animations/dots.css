@@ -1,0 +1,104 @@
+@keyframes rot {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
+.animationBody {
+  height: 60%;
+  width: 100%;
+  font-size: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper,
+.cube {
+  position: relative;
+  transform-style: preserve-3d;
+  animation: rot 4.2s linear infinite;
+  background: red;
+}
+
+@keyframes cube {
+  from {
+    transform: rotateY(-0.159rad) rotateX(-0.159rad);
+  }
+  50% {
+    transform: rotateY(-0.159rad) rotateX(0.159rad);
+  }
+  to {
+    transform: rotateY(0.159rad) rotateX(0.159rad);
+  }
+}
+.cube {
+  animation: cube 4s cubic-bezier(0.5, 0.15, 0.5, 0.85) infinite;
+}
+.cube::before,
+.cube::after {
+  content: "";
+  position: absolute;
+  width: 0.8em;
+  height: 0.8em;
+  margin: -0.4em 0 0 -0.4em;
+  background-image: radial-gradient(
+      #121212,
+      calc(-1px + 0.025em),
+      rgba(253, 253, 253, 0) 0.025em
+    ),
+    radial-gradient(
+      #121212 calc(-1px + 0.025em),
+      rgba(253, 253, 253, 0) 0.025em
+    ),
+    radial-gradient(
+      #121212 calc(-1px + 0.025em),
+      rgba(253, 253, 253, 0) 0.025em
+    ),
+    radial-gradient(
+      #121212 calc(-1px + 0.025em),
+      rgba(253, 253, 253, 0) 0.025em
+    ),
+    radial-gradient(
+      #121212 calc(-1px + 0.025em),
+      rgba(253, 253, 253, 0) 0.025em
+    ),
+    radial-gradient(
+      #121212 calc(-1px + 0.025em),
+      rgba(253, 253, 253, 0) 0.025em
+    ),
+    radial-gradient(
+      #121212 calc(-1px + 0.025em),
+      rgba(253, 253, 253, 0) 0.025em
+    ),
+    radial-gradient(
+      #121212 calc(-1px + 0.025em),
+      rgba(253, 253, 253, 0) 0.025em
+    ),
+    radial-gradient(
+      #121212 calc(-1px + 0.025em),
+      rgba(253, 253, 253, 0) 0.025em
+    ),
+    radial-gradient(
+      #121212 calc(-1px + 0.025em),
+      rgba(253, 253, 253, 0) 0.025em
+    ),
+    radial-gradient(
+      #121212 calc(-1px + 0.025em),
+      rgba(253, 253, 253, 0) 0.025em
+    ),
+    radial-gradient(
+      #121212 calc(-1px + 0.025em),
+      rgba(253, 253, 253, 0) 0.025em
+    );
+  background-size: 0.05em 0.05em;
+  background-repeat: no-repeat;
+  background-position: 0% 0%, 33.33333% 0%, 66.66667% 0%, 100% 0%,
+    100% 33.33333%, 100% 66.66667%, 100% 100%, 66.66667% 100%, 33.33333% 100%,
+    0% 100%, 0% 66.66667%, 0% 33.33333%;
+  transform: translateZ(0.5em);
+}
+.cube::after {
+  transform: translateZ(-0.5em);
+}

@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500&display=swap');
+
+:root {
+  /* --bg-main:#121212; */
+  --bg-main: white;
+
+  /* --text-primary:white; */
+  --text-primary: #121212;
+}
+
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-main);
+  background-image: url("../assets/paperTexture.png");
+
+  color: var(--text-primary);
+  font-family: "Lato", sans-serif;
+  font-size: calc(10px + 0.33vw);
+}
