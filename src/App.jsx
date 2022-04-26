@@ -8,7 +8,7 @@ export default function App() {
   useEffect(() => {
     const curr = window.localStorage.getItem("redirect") === "true";
     if (curr) {
-      // window.location.replace("https://app.dconvos.tk");
+      window.location.replace("https://app.dconvos.tk");
     }
   }, []);
 
