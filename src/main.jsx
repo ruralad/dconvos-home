@@ -4,7 +4,6 @@ import { BrowserRouter,Routes,Route } from "react-router-dom";
 
 import App from "./App";
 import About from "./About";
-import RoadMap from "./RoadMap";
 
 import "./styles/index.css";
 
