@@ -8,7 +8,7 @@ export default function App() {
   useEffect(() => {
     const curr = window.localStorage.getItem("redirect") === "true";
     if (curr) {
-      window.location.replace("https://app.dconvos.tk");
+      // window.location.replace("https://app.dconvos.tk");
     }
   }, []);
 
@@ -63,7 +63,7 @@ export default function App() {
         <Link to="/about" style={{ textDecoration: "none" }}>
           <div className={styles.button2}>About</div>
         </Link>
-        <a href="https://www.notion.so/ruralad/dConvos-discussions-50d70fd7fdc145cfa35a55b5bc3e61b0" target="_blank" rel="noreferrer" style={{ textDecoration: "none" }}>
+        <a href="https://ruralad.notion.site/dConvos-discussions-50d70fd7fdc145cfa35a55b5bc3e61b0" target="_blank" rel="noreferrer" style={{ textDecoration: "none" }}>
           <div className={styles.button2}>Roadmap</div>
         </a>
       </div>
