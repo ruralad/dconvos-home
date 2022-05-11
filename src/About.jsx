@@ -45,7 +45,7 @@ export default function About() {
           how the app should look, and most importantly, <br /> you'll get true
           end-to-end encryption. That's it!
         </p>
-        <p>Wan't to know more? Try it out then.</p>
+        <p>Want to know more? Try it out then.</p>
       </div>
       {/* <div className={styles.one}>
         <div className={styles.text}>
