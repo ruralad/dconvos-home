@@ -11,7 +11,7 @@
 
 .buttons {
   margin-top: 30px;
-  margin-left: -100px;
+  margin-left: -50px;
   text-align: left;
   display: flex;
 }
@@ -116,7 +116,7 @@
   }
   .buttons {
     font-size: 1.05rem;
-    margin-left: -100px;
+    margin-left: -40px;
     margin-top: 10px;
   }
   .button{

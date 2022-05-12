@@ -66,6 +66,9 @@ export default function App() {
         <a href="https://ruralad.notion.site/dConvos-discussions-50d70fd7fdc145cfa35a55b5bc3e61b0" target="_blank" rel="noreferrer" style={{ textDecoration: "none" }}>
           <div className={styles.button2}>Roadmap</div>
         </a>
+        <a href="https://github.com/someonetookit" target="_blank" rel="noreferrer" style={{ textDecoration: "none" }}>
+          <div className={styles.button2}>Code</div>
+        </a>
       </div>
 
       <div className={styles.snackbar}>
